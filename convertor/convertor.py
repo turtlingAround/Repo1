@@ -1,15 +1,16 @@
-while True:
-
-    option = input("=====MEGA CONVERTER ===== \n \
+print("=====MEGA CONVERTER ===== \n \
     \n      A: Metres to Feet \
     \n      B: Feet to Metres \
     \n      C: Celsius to Farenheit \
     \n      D: Farenheit to Celsius \
     \n      E: Kilograms to Pounds \
-    \n      F: Pounds to Kilograms \
-    \n Specify the conversion you want: ")
+    \n      F: Pounds to Kilograms ")
 
+while True:
     try:
+        
+        option = input("Specify the conversion you want: ")
+        
         if option.lower() == 'a':
             amount = int(input('Enter a value in Metres: '))
             print(f'{amount} m = {amount * 3.28084:.2f} ft')
